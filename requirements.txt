@@ -1,0 +1,6 @@
+celesto==0.0.14
+fastapi
+uvicorn
+psycopg[binary]
+pyyaml
+pytest
