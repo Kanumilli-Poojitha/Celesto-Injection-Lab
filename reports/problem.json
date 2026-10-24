@@ -1,0 +1,6 @@
+{
+  "who": "Developers and students who let LLM agents read untrusted READMEs and web pages on a machine that also holds secrets such as API keys.",
+  "agent_work": "The agent reads a poisoned README and web page inside a Celesto microVM, writes notes and a merged summary.md, while a host-side hook audits every shell command.",
+  "proof_output": "summary.md produced in the guest, plus commands.jsonl showing blocked exfiltration attempts",
+  "idea_source": "idea_bank"
+}

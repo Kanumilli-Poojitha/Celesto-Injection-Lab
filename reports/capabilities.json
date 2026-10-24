@@ -1,0 +1,14 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "A host-side hook inspects every command before the guest sees it, logs allow/block decisions to commands.jsonl, and blocks egress, secret reads, destructive commands and encoded canary leaks; a system prompt cannot enforce any of that.",
+      "evidence_path": "runner/hooks.py"
+    },
+    {
+      "id": "persistence",
+      "why": "When step 7 fails the runner stops and starts the same computer, checks that the files written by steps 5 and 6 survived on the guest disk, and retries only step 7, avoiding a re-boot and two repeated LLM phases.",
+      "evidence_path": "runner/pipeline.py"
+    }
+  ]
+}
